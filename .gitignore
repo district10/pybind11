@@ -38,7 +38,6 @@ sosize-*.txt
 pybind11Config*.cmake
 pybind11Targets.cmake
 /*env*
-/.vscode
 /pybind11/include/*
 /pybind11/share/*
 /docs/_build/*

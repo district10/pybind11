@@ -21,6 +21,8 @@ if(DEFINED PYBIND11_MASTER_PROJECT)
   return()
 endif()
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Extract project version from source
 file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/include/pybind11/detail/common.h"
      pybind11_version_defines REGEX "#define PYBIND11_VERSION_(MAJOR|MINOR|PATCH) ")

@@ -9,10 +9,6 @@
 
 #include "../numpy.h"
 
-#if defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER)
-static_assert(__GNUC__ > 5, "Eigen Tensor support in pybind11 requires GCC > 5.0");
-#endif
-
 // Disable warnings for Eigen
 PYBIND11_WARNING_PUSH
 PYBIND11_WARNING_DISABLE_MSVC(4554)
